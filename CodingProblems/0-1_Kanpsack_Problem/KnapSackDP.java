@@ -1,4 +1,4 @@
-package com.iitjobs;
+package com.sstummala.codingproblems.dp;
 
 public class KnapSackDP {
 	// solving 0/1 Knapsack problem with Dynamic programming
