@@ -1,4 +1,4 @@
-package com.iitjobs;
+package com.sstummala.codingproblems;
 
 public class InsertionSort {
 	
