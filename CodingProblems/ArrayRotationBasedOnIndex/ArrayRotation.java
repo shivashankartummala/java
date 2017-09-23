@@ -1,4 +1,4 @@
-package com.iitjobs;
+package com.sstummala.codingproblems;
 
 import java.util.Arrays;
 
