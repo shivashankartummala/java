@@ -1,4 +1,4 @@
-package com.iitjobs;
+package com.sstummala.codingproblems;
 
 /* A Naive recursive implementation of LCS problem in java*/
 public class LongestCommonSubsequence
