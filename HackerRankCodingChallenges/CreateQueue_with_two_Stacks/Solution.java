@@ -4,6 +4,8 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+//Reference : https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
+
 public class Solution {
     public static class MyQueue<T> {
         Stack<T> stackNewestOnTop = new Stack<T>();
