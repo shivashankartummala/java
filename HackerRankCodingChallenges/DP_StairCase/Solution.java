@@ -4,6 +4,9 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+//https://www.youtube.com/watch?v=CFQk7OQO_xM
+//https://www.hackerrank.com/challenges/ctci-recursive-staircase
+
 public class Solution {
     public static HashMap<Integer, Integer> cache= new HashMap<Integer, Integer>();
 
