@@ -34,6 +34,7 @@ implement a stack
 reverse a given stack
 find max in given stack.
 impelemnt a queue using two stacks
+sort a stack using an helper stack.
 
 #queue
 implement a queue
