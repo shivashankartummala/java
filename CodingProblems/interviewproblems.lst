@@ -25,6 +25,7 @@ find nth last element in a given singly Linked list.
 check whether a given linked list contains cycles.
 clone a given linked list that has random pointters.
 reverse a given linked list;
+print a given linked list in reverse order without altering the list.
 check whether given linked list is palindrome.
 dedeup a giver sorted linked list.
 
