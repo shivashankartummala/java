@@ -1,19 +1,47 @@
 #Strings
 Anagrams : check whetehr two given srings are anagrams
-find longest subsequence
+find longest subsequence in two given strings;
+find longest common substring  in two given strings;
+longest repeating char sequence in  given string.
+longest palindrome subsequnce in given string.
+first non repeating char in given string.
+wriete method that does String compression of a given input string and return a short string.
+
+
+
 
 #Arrays
 Array rotation
 find duplicates in an array
 find the first non repeating item in a given array.
 find whether any two elements in given array adds up a given sum.
+find median of two sorted arrays.
+binary search on sorted array.
+Merge k sorted arrays
+
+#2D Arrays
+find largest square of 1's in a 0-1 matrix.
+
 
 
 #LinkedList
 implement a Linked List.
+find nth last element in a given singly Linked list.
 check whether a given linked list contains cycles.
 clone a given linked list that has random pointters.
 reverse a given linked list;
+check whether given linked list is palindrome.
+dedeup a giver sorted linked list.
+
+#stack
+implement a stack
+reverse a given stack
+find max in given stack.
+impelemnt a queue using two stacks
+
+
+#queue
+implement a queue
 
 #trees
 implement a binary search tree
@@ -22,6 +50,9 @@ find lowest common ancestror of two given nodes in a given binary tree [tree is 
 check whether a given binary tree is a BST.
 find the distance between two given nodes in a binary search tree.
 invert a tree, with each nodes point to its parent.
+
+#tries
+implement a trie data structure to store contacts
 
 #graphs
 implement DFS , BFS in a graph
@@ -43,6 +74,8 @@ heap sort
 
 #dynamic programming
 0-1 knapsack problem
+make coin change
+minimum edit distance between two given strings.
 
 
 
