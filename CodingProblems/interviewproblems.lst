@@ -1,11 +1,48 @@
 #Strings
-Anagrams : 
+Anagrams : check whetehr two given srings are anagrams
+find longest subsequence
 
 #Arrays
+Array rotation
+find duplicates in an array
+find the first non repeating item in a given array.
+find whether any two elements in given array adds up a given sum.
+
+
+#LinkedList
+implement a Linked List.
+check whether a given linked list contains cycles.
+clone a given linked list that has random pointters.
+reverse a given linked list;
 
 #trees
+implement a binary search tree
+tree traversal : DFS->[preorder, inorder, postorder]; BFS->[leve order]
+find lowest common ancestror of two given nodes in a given binary tree [tree is not a BST].
+check whether a given binary tree is a BST.
+find the distance between two given nodes in a binary search tree.
+invert a tree, with each nodes point to its parent.
 
 #graphs
+implement DFS , BFS in a graph
+minimum spanning tree
+single source shortest path algorithm
+
 
 #recursion
+find nth fbonacci number
+find factorial of a given number.
+
+#sorting
+Merge sort
+Quick sort
+selection sort
+insertion sort
+bubble sort
+heap sort
+
+#dynamic programming
+0-1 knapsack problem
+
+
 
