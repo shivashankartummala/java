@@ -33,11 +33,12 @@ dedeup a giver sorted linked list.
 implement a stack
 reverse a given stack
 find max in given stack.
-impelemnt a queue using two stacks
+impelemnt a stack using two queues.
 sort a stack using an helper stack.
 
 #queue
 implement a queue
+impelemnt a queue using two stacks
 
 #trees
 implement a binary search tree
