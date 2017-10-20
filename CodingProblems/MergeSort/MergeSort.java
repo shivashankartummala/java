@@ -45,12 +45,9 @@ public class MergeSort {
 		//since both the left array and right array are sorted, the next smallest element from one of the array is picked into the result array.		
 		while (i <= middle && j <=high) {
 			if(helperArray[i] <= helperArray[j]){
-				array[k] = helperArray[i++];
-				
-				
+				array[k] = helperArray[i++];				
 			}else{
-				array[k] = helperArray[j++];
-				
+				array[k] = helperArray[j++];				
 			}
 			k++;		
 		}
@@ -60,7 +57,7 @@ public class MergeSort {
 			array[k+l] = helperArray[i+l];
 		}
 		// Since we are sorting in-place any leftover elements from the right side
-        // are already at the right position.
+               // are already at the right position.
 	}
 
 }
