@@ -1,4 +1,4 @@
-package com.sstummala.codingproblems;
+package com.sstummala.codingproblems.sorting;
 
 import java.util.Arrays;
 
@@ -38,28 +38,29 @@ public class MergeSort {
 			helperArray[i] = array[i];
 		}
 		
-		int helperLeft = low;
-		int helperRight = middle+1;
-		int current = low;
+		int i = low; // leftArrayCursor
+		int j = middle+1; //rightArrayCursor
+		int k = low; //resultArrayCursor
 		
-		while (helperLeft <= middle && helperRight <=high) {
-			if(helperArray[helperLeft] <= helperArray[helperRight]){
-				array[current] = helperArray[helperLeft];
-				helperLeft++;
+		//since both the left array and right array are sorted, the next smallest element from one of the array is picked into the result array.		
+		while (i <= middle && j <=high) {
+			if(helperArray[i] <= helperArray[j]){
+				array[k] = helperArray[i++];
+				
 				
 			}else{
-				array[current] = helperArray[helperRight];
-				helperRight++;
+				array[k] = helperArray[j++];
+				
 			}
-			current ++;		
+			k++;		
 		}
-		
-		int remaining = middle - helperLeft;
-		for (int i = 0; i <= remaining; i++) {
-			array[current+i] = helperArray[helperLeft+ i];
+		// Copy the rest of the left side of the array into the target array
+		int remaining = middle - i;
+		for (int l = 0; l <= remaining; l++) {
+			array[k+l] = helperArray[i+l];
 		}
+		// Since we are sorting in-place any leftover elements from the right side
+        // are already at the right position.
 	}
 
 }
-//input array: [1, 6, 9, 3, 2, 4, 7, 5, 8, 10]
-//final output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
