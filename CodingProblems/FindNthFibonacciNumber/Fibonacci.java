@@ -17,13 +17,17 @@ public class Fibonacci {
 	  }
 	  
 	  /* In the Fibonacci sequence, the first two numbers are 0 and 1 and each number after that is the sum of the previous two numbers in the sequence.
-	   * So, the sequence looks like this: 0, 1, 1, 2, 3, 5, 8, 13, 21Ö and so on. The ì0î in the sequence is considered to be the 0th element, 
-	   * the first ì1î is considered to be the 1st element, the 2 is the 3rd element, etc. And the problem specifically states that the function 
+	   * So, the sequence looks like this: 0, 1, 1, 2, 3, 5, 8, 13, 21‚Ä¶ and so on. The ‚Äú0‚Äù in the sequence is considered to be the 0th element, 
+	   * the first ‚Äú1‚Äù is considered to be the 1st element, the 2 is the 3rd element, etc. And the problem specifically states that the function 
 	   * or method needs to return the nth element in the Fibonacci sequence, where the input to that function or method is n.
 	   * 
 	   * 0, 1, 1, 2, 3,5,8,13,21, ...
 	   */
 	  
+	/*
+	* time complexity : O(2^n)
+	* space complexity : O(1)
+	*/
 	  public static int getFibonacci(int n){
 		  	  		  
 		  if(n == 0) return 0;
@@ -33,6 +37,10 @@ public class Fibonacci {
 	  }
 	  
 	  //Topdown dynamic programming approach is recursion + memoization data structure.
+	/*
+	* time complexity : O(n)
+	* space complexity : O(n)
+	*/
 	  public static int getFibonacciTopdownDP(int n){
 		  int[] cache = new int[n+1];
 		  Arrays.fill(cache, -1);
@@ -54,7 +62,12 @@ public class Fibonacci {
 	  
 	  // Bottomup Dynamic programming approach is iterative and it starts calculation from 0 to n.
 	  // Bottomup Dynamic programming approach is iterative + memoization data structure 
+	/*
+	* time complexity : O(n)
+	* space complexity : O(n)
+	*/
 	  public static int getFibonacciBottomupDP(int n){
+		  if(n==0) return 0;
 		  int[] cache = new int[n+1];
 		  Arrays.fill(cache, -1);
 		  cache[0]=0;
