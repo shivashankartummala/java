@@ -24,7 +24,8 @@ public class KnapSackDP {
 	
 	  // A utility function that returns maximum of two integers
     static int max(int a, int b) { return (a > b)? a : b; }
-      
+     
+   // Bottom up / iterative dynamic programming approach	
    // Returns the maximum value that can be put in a knapsack of capacity W
     static int knapSack(int capacity, int weights[], int vals[], int n)
     {
@@ -35,7 +36,7 @@ public class KnapSackDP {
      for (item = 0; item <= n; item++)
      {
          for (w = 0; w <= capacity; w++)
-         {
+         {   
              if (item==0 || w==0)
                   cacheMatrix[item][w] = 0;
              else if (weights[item-1] <= w)
