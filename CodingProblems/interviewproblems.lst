@@ -27,7 +27,7 @@ clone a given linked list that has random pointters.
 reverse a given linked list;
 print a given linked list in reverse order without altering the list.
 check whether given linked list is palindrome.
-dedeup a giver sorted linked list.
+dedeup a given unsorted linked list.
 
 #stack
 implement a stack
@@ -69,6 +69,9 @@ bubble sort
 heap sort
 
 #dynamic programming
+fibonacci
+Find largest square of trues in bolean matrix 
 0-1 knapsack problem
 make coin change
 minimum edit distance between two given strings.
+TargetSum problem
