@@ -1,4 +1,5 @@
-package com.sstummala.codingproblems.linkedlistcycles;
+package com.sstummala.codingproblems.datastructures.linkedlist.cycle;
+
 
 public class DetectCyclesInList {
 		
@@ -35,4 +36,17 @@ public class DetectCyclesInList {
 		
 	}
 
+}
+
+class Node{
+	int value;
+	Node next;
+	public Node(int data){
+		this.value=data;
+	}
+	public Node(int data, Node next){
+		this.value=data;
+		this.next = next;
+	}
+	
 }
