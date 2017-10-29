@@ -1,5 +1,5 @@
 A online fruit store decides to give the below offer to its customers.
-every there ia a secret combination of fruits , if any customer happens buy in the same combination then he is chosen to be the winner.
+everyday there ia a secret combination of fruits , if any customer happens buy in the same combination then he is chosen to be the winner.
 To manage the secret codes the codes are oganised into a list of list of fruit names in which the order of the items in a group 
 and the order of the groups itself should match the items in the shopping cart to pick a customer as winner.
 Write a method to that takes List<List <String>> codeList, List<String> ShoopingCart as input retuns 0 or 1 
