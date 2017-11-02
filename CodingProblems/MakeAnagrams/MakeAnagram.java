@@ -37,12 +37,37 @@ public class MakeAnagram {
         
       
     }
+	
+	public static boolean isAnagrams(String first, String second) {
+        int[] cache = new int[26];
+        if(first.length()!=second.length()) return false;
+        char[] c1 = first.toCharArray();
+        char[] c2 = second.toCharArray();
+        for(int i=0; i<c1.length; i++){
+        	cache[c1[i] - 'a']++;
+        	cache[c2[i] - 'a']--;
+        }
+             
+        
+        
+        for (int i=0; i<26; i++){
+            if(cache[i]!=0) return false;
+        }
+        return true;
+        
+      
+    }
   
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String a = in.next();
-        String b = in.next();
+        //String a = in.next();
+       // String b = in.next();
+       String a = "ababab";
+       String b = "bababc";
+       String c = "bababa";
         System.out.println(numberNeeded(a, b));
+        System.out.println(isAnagrams(a, b));
+        System.out.println(isAnagrams(a, c));
     }
 
 }
