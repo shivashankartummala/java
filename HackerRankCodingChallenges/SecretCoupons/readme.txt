@@ -12,3 +12,5 @@ shoppingcart2=[banana,orange,banana,orange,apple,apple] --------> return 0
 CodeList=[[orange][watermelon,apple][banana,anything,banana]
 shoppingcart1=[banana,orange,banana,watermelon,apple,orange,banana,apple,banana] ---> return 1
 shoppingcart2=[banana,orange,banana,watermelon,banana,orange,banana,apple,banana] --- return 0
+
+*note : This is a amazon interview question.
