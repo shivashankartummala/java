@@ -47,6 +47,13 @@ find lowest common ancestror of two given nodes in a given binary tree [tree is 
 check whether a given binary tree is a BST.
 find the distance between two given nodes in a binary search tree.
 invert a tree, with each nodes point to its parent.
+Find the minimum value in a binary search tree, 
+find the maximum depth of a binary tree and mirror a binary tree. 
+Count the number of structurally unique binary trees that can be built with N nodes, 
+print the nodes within a certain range in a binary search tree.
+Check if a path from root node to leaf node has a specified sum, 
+print all paths from the root node to all leaf nodes
+
 
 #tries
 implement a trie data structure to store contacts
