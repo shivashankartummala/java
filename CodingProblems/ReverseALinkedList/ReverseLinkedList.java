@@ -48,6 +48,7 @@ public class ReverseLinkedList {
 	/*method for reversing the pointter in the input linked list
 	 *  time complexity : O(n)
 	 *  space complexity : Inplace / O(1)
+	 *  This is a iterative style algorithm and it uses 3 pointers / Nodes.
 	 */
 	
 	public static void reverseLinkedList(LinkedList input){
@@ -65,6 +66,8 @@ public class ReverseLinkedList {
 		
 		
 	}
+	
+	
 	
 
 }
