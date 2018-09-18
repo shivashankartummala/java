@@ -1,5 +1,7 @@
 package com.sstummala.codingproblems.datastructures.linkedlist;
 
+
+
 public class ReverseLinkedList {
 	
 	public static void main(String[] args){
@@ -12,11 +14,20 @@ public class ReverseLinkedList {
 	linkedlist.append(5);
 	linkedlist.prepend(1);
 	
-	linkedlist.display();
+	System.out.println("Test the reversal using iterative approach");
+	linkedlist.display("Original LinkedList");
+	
 	reverseLinkedList(linkedlist);
-	linkedlist.display();
+	linkedlist.display("Reversed Linkedlist using iterative approach");
+	
+	System.out.println("print a given linkedlist in reverse order withou modifying the list");
 	printreverseOfLinkedList(linkedlist);
 	
+	System.out.println("Test the reversal using recursive approach");
+	
+	linkedlist.display(linkedlist.head, "Orginal LinkedList");
+	Node newhead = reverseLinkedListRecursive(linkedlist.head);
+	linkedlist.display(newhead, "Reversed LinkedList using Recursion");
 	
 	
 	}
@@ -26,6 +37,7 @@ public class ReverseLinkedList {
 	/*
 	 * time complexity : O(n)
 	 * space complexity : 
+	 *  Note :  This is a iterative style algorithm and it uses 3 pointers / Node variables to track.
 	 * 
 	 */
 	public static void printreverseOfLinkedList(LinkedList input){
@@ -48,7 +60,6 @@ public class ReverseLinkedList {
 	/*method for reversing the pointter in the input linked list
 	 *  time complexity : O(n)
 	 *  space complexity : Inplace / O(1)
-	 *  This is a iterative style algorithm and it uses 3 pointers / Nodes.
 	 */
 	
 	public static void reverseLinkedList(LinkedList input){
@@ -67,7 +78,25 @@ public class ReverseLinkedList {
 		
 	}
 	
+	// Recursive method for reversing a linkedlist
+	// this uses 2 pointers only, but the recursion implicity used extra space for each call in the method stack.
 	
+	public static Node reverseLinkedListRecursive(Node head) {
+		if(head == null) {
+			return null;
+		}
+		Node p = head;
+		Node q = p.next;
+		
+		if(q == null) return p;
+		q = reverseLinkedListRecursive(q);
+		
+		p.next.next = p;
+		p.next = null;
+		
+		return q;		
+		
+	}
 	
 
 }
